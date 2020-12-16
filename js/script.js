@@ -17,4 +17,3 @@ for (var i = 0; i < length; i++) {
 
 var indice = cognomi.indexOf(cognome) + 1 ;
 lista.append('La posizione in cui si trova '+ cognome + ' è: ' + indice);
-}
