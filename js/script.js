@@ -6,6 +6,8 @@
 
 var cognome=prompt('Ciao utente, quale è il tuo cognome?');
 var cognomi = ['Bianchi','Rossi','Duzioni','Balsano','Verdi'];
+if(isNaN(cognome) && cognome[0] === cognome[0].toUpperCase()){
+
 var length= cognomi.push(cognome);
 cognomi=cognomi.sort();
 
@@ -17,3 +19,7 @@ for (var i = 0; i < length; i++) {
 
 var indice = cognomi.indexOf(cognome) + 1 ;
 lista.append('La posizione in cui si trova '+ cognome + ' è: ' + indice);
+}
+else{
+  alert('Devi inserire un cognome,e deve iniziare con la lettera maiuscola');
+}
